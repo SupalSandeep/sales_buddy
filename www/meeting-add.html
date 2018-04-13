@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sales Buddy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animate-in" style="background-color: unset">
+<!--START MAIN CONTAINER-->
+<div class="main-container" style="background-color: unset">
+
+    <!--HEADER START-->
+    <div class="header clearfix">
+        <div class="header-container clearfix">
+            <button id="menu-btn" class="menu-btn btn-transparent"><i class="fa fa-navicon fa-fw"></i></button> <img class="logo-small" src="images/logo-small.png"/>Add Meeting <a class="action-btn btn-transparent" href="lead-add.html" style="right:30px;"><i class="fa fa-user-plus"></i></a><a class="action-btn btn-transparent" href="javascript:void(0);"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--CONTENT AREA START-->
+    <div class="content-area meeting-container" style="background-color: unset">
+        <form id="meeting-add" class="meeting-add-form" name="meetingAdd">
+            <label style="margin-bottom: 15px">Title*</label>
+            <div class="form-group float-label-control clearfix" id="meeting-with1">
+                <label>Meeting with</label>
+                <select id="meeting-with">
+                    <option value="1">Home loans</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="form-group input-field calendar">
+                <input type="text" id="date" class="datepicker" name="date">
+                <label for="date">Select Date*</label>
+            </div>
+            <div class="form-group input-field timer">
+                <input type="text" id="time" class="timepicker" name="time">
+                <label for="time">Select Time*</label>
+            </div>
+            <div class="form-group input-field">
+                <input type="text" id="note" name="note">
+                <label for="note">Add Note</label>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-elegant waves-effect waves-light btn-block btn-large">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <!--CONTENT AREA END-->
+</div>
+<!--END MAIN CONTAINER-->
+
+<!--MENU START-->
+<aside id="menu-container" class="menu-container">
+    <div class="user-panel">
+        <button id="menu-close" class="menu-close btn-transparent">
+            <i class="fa fa-close fa-fw"></i>
+        </button>
+        <i class="fa fa-user-circle-o fa-fw"></i>
+        <span>Neha</span>
+        <span>PR branch 1</span>
+    </div>
+    <div class="menu-div">
+        <ul class="menu-ul">
+            <li>
+                <a href="dashboard.html"><i class="fa fa-home fa-fw"></i> Home</a>
+            </li>
+            <!-- <li>
+                <a href="javascript:void(0);"><i class="fa fa-search fa-fw"></i> Search Leads</a>
+            </li> -->
+            <li>
+                <a href="lead-view.html"><i class="fa fa-user fa-fw"></i> View Leads</a>
+            </li>
+            <li>
+                <a href="lead-add.html"><i class="fa fa-user-plus fa-fw"></i> Add Lead</a>
+            </li>
+            <li>
+                <a href="meeting-view.html"><i class="fa fa-calendar fa-fw"></i> View Meeting</a>
+            </li>
+            <li>
+                <a href="meeting-add.html"><i class="fa fa-calendar-plus-o fa-fw"></i> Add Meeting</a>
+            </li>
+            <li>
+                <a href="performance.html"><i class="fa fa-line-chart fa-fw"></i> Performance</a>
+            </li>
+            <li><a href="javascript:void(0);"><i class="fa fa-exclamation-circle fa-fw"></i> Know Your Products</a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-handshake-o fa-fw"></i> Partner</a></li>
+            <li><a href="javascript:void(0);">About Sales Buddy</a></li>
+            <li><a href="javascript:void(0);">Take a Tour</a></li>
+        </ul>
+    </div>
+</aside>
+<div class="overlay-menu"></div>
+<!--MENU END-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/amcharts/amcharts.js"></script>
+<script src="js/amcharts/pie.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  $('#date').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+  $('#time').pickatime({
+    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: true, // Use AM/PM or 24-hour format
+    donetext: 'OK', // text for done-button
+    cleartext: 'Clear', // text for clear-button
+    canceltext: 'Cancel', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+</script>
+
+</body>
+</html>

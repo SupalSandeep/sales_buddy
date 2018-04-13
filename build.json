@@ -1,0 +1,17 @@
+
+{
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "iPhone Development",
+            "provisioningProfileFile": "BCG_Salesbuddy.mobileprovision",
+            "developmentTeam":"R4DPX84QP9"
+        }
+    },
+    "ios": {
+        "release": {
+            "codeSignIdentity": "iPhone Distribution",
+            "provisioningProfileFile": "BCG_Salesbuddy.mobileprovision",
+            "developmentTeam":"R4DPX84QP9"
+        }
+    }
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Performance</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animate-in">
+<!--START MAIN CONTAINER-->
+<div class="main-container">
+
+    <!--HEADER START-->
+    <div class="header clearfix">
+        <div class="header-container clearfix">
+            <button id="menu-btn" class="menu-btn btn-transparent"><i class="fa fa-navicon fa-fw"></i></button> <img class="logo-small" src="images/logo-small.png"/>Your Performance <a class="action-btn btn-transparent" href="#" style="right:30px;"><i class="fa fa-filter"></i></a><a class="action-btn btn-transparent" href="javascript:void(0);"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--CONTENT AREA START-->
+    <div class="content-area">
+
+        <!--Card Performance-->
+        <div class="card">
+            <!--Card content-->
+            <div class="card-block">
+                <!--Title-->
+                <h4 class="card-title"><i class="fa fa-user fa-fw"></i> Lead Generation</h4>
+                <hr>
+                <!--Text-->
+                <div class="card-body chart-body">
+                    <div id="performance-owl" class="owl-carousel owl-theme">
+                        <div class="item clearfix">
+                            <div class="serial-container">
+                                <div id="leadDiv" class="performance-lead"></div>
+                                <div class="graph-title">LEADS<br>GENERATED</div>
+                            </div>
+                            <div class="serial-container">
+                                <div id="meetingDiv" class="performance-meeting"></div>
+                                <div class="graph-title">MEETINGS<br>CONDUCTED</div>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="serial-container">
+                                <div id="leadgeneratedDiv" class="performance-converted"></div>
+                                <div class="graph-title">LEADS<br>CONVERTED</div>
+                            </div>
+                            <div class="serial-container">
+                                <div id="businessDiv" class="performance-business"></div>
+                                <div class="graph-title">BUSINESS<br>GENERATED (Rs.)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="performance-info clearfix">
+                    <div class="period pull-right">Month to Date on 31 Mar 2017</div>
+                </div>
+            </div>
+            <!--/.Card content-->
+        </div>
+        <!--/.Card Performance-->
+
+
+        <!--Card Leads-->
+        <div class="card">
+            <!--Card content-->
+            <div class="card-block">
+                <!--Title-->
+                <h4 class="card-title"><i class="fa fa-star fa-fw"></i> Your points - Total 1</h4>
+                <hr>
+                <!--Text-->
+                <div class="card-body chart-body">
+                </div>
+                <div id="performance-owl-count" class="owl-carousel owl-theme">
+                    <div class="item clearfix">
+                        <div class="circle-container2 contacted">
+                            <div>1</div>
+                            <span>Leads<br>Generated</span>
+                        </div>
+                        <div class="circle-container2 new last">
+                            <div>2</div>
+                            <span>Meetings<br>Conducted</span>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="circle-container2 converted">
+                            <div>0</div>
+                            <span>Leads<br>Converted</span>
+                        </div>
+                        <div class="circle-container2 pending last">
+                            <div>0</div>
+                            <span>Business<br>Generated</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="performance-info clearfix">
+                    <div class="period pull-right">Month to Date on 31 Mar 2017</div>
+                </div>
+            </div>
+            <!--/.Card content-->
+        </div>
+        <!--/.Card Leads-->
+
+    </div>
+    <!--CONTENT AREA END-->
+</div>
+<!--END MAIN CONTAINER-->
+
+<!--MENU START-->
+<aside id="menu-container" class="menu-container">
+    <div class="user-panel">
+        <button id="menu-close" class="menu-close btn-transparent">
+            <i class="fa fa-close fa-fw"></i>
+        </button>
+        <i class="fa fa-user-circle-o fa-fw"></i>
+        <span>Neha</span>
+        <span>PR branch 1</span>
+    </div>
+    <div class="menu-div">
+        <ul class="menu-ul">
+            <li>
+                <a href="dashboard.html"><i class="fa fa-home fa-fw"></i> Home</a>
+            </li>
+            <!-- <li>
+                <a href="javascript:void(0);"><i class="fa fa-search fa-fw"></i> Search Leads</a>
+            </li> -->
+            <li>
+                <a href="lead-view.html"><i class="fa fa-user fa-fw"></i> View Leads</a>
+            </li>
+            <li>
+                <a href="lead-add.html"><i class="fa fa-user-plus fa-fw"></i> Add Lead</a>
+            </li>
+            <li>
+                <a href="meeting-view.html"><i class="fa fa-calendar fa-fw"></i> View Meeting</a>
+            </li>
+            <li>
+                <a href="meeting-add.html"><i class="fa fa-calendar-plus-o fa-fw"></i> Add Meeting</a>
+            </li>
+            <li>
+                <a href="performance.html"><i class="fa fa-line-chart fa-fw"></i> Performance</a>
+            </li>
+            <li><a href="javascript:void(0);"><i class="fa fa-exclamation-circle fa-fw"></i> Know Your Products</a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-handshake-o fa-fw"></i> Partner</a></li>
+            <li><a href="javascript:void(0);">About Sales Buddy</a></li>
+            <li><a href="javascript:void(0);">Take a Tour</a></li>
+        </ul>
+    </div>
+</aside>
+<div class="overlay-menu"></div>
+<!--MENU END-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/amcharts/amcharts.js"></script>
+<script src="js/amcharts/serial.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Chart code -->
+<script>
+  var chart = AmCharts.makeChart("leadDiv",
+    {
+      "chartCursor": false,
+      "type": "serial",
+      "theme": "none",
+      "dataProvider": [{
+        "name": "ACTUAL",
+        "points": 5,
+        "color": "#5c667b"
+      }, {
+        "name": "TARGET",
+        "points": 10,
+        "color": "#F15D29"
+      }],
+      "valueAxes": [{
+        "maximum": 11,
+        "minimum": 0,
+        "axisAlpha": 0,
+        "dashLength": 4,
+        "position": "left"
+      }],
+      "startDuration": 2,
+      "graphs": [{
+        "showBalloon": false,
+        "balloonText": "<span style='font-size:13px;'>[[category]]: <b>[[value]]</b></span>",
+        "colorField": "color",
+        "cornerRadiusTop": 0,
+        "fillAlphas": 1,
+        "lineAlpha": 0,
+        "type": "column",
+        "valueField": "points",
+        "labelText": "[[category]]" + " " + "[[value]]",
+        "labelPosition": "top",
+        "labelColorField": "color"
+      }],
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginLeft": 0,
+      "marginBottom": 0,
+      "autoMargins": false,
+      "categoryField": "name",
+      "categoryAxis": {
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": false,
+        "tickLength": 0
+      },
+      "export": {
+        "enabled": false
+      }
+    });
+
+
+
+  var chart = AmCharts.makeChart("meetingDiv",
+    {
+      "chartCursor": false,
+      "type": "serial",
+      "theme": "none",
+      "dataProvider": [{
+        "name": "ACTUAL",
+        "points": 1,
+        "color": "#5c667b"
+      }, {
+        "name": "TARGET",
+        "points": 6,
+        "color": "#F15D29"
+      }],
+      "valueAxes": [{
+        "maximum": 7,
+        "minimum": 0,
+        "axisAlpha": 0,
+        "dashLength": 4,
+        "position": "top"
+      }],
+      "startDuration": 2,
+      "graphs": [{
+        "showBalloon": false,
+        "balloonText": "<span style='font-size:13px;'>[[category]]: <b>[[value]]</b></span>",
+        "colorField": "color",
+        "cornerRadiusTop": 0,
+        "fillAlphas": 1,
+        "lineAlpha": 0,
+        "type": "column",
+        "valueField": "points",
+        "labelText": "[[category]]" + " " + "[[value]]",
+        "labelPosition": "top",
+        "labelColorField": "color"
+      }],
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginLeft": 0,
+      "marginBottom": 0,
+      "autoMargins": false,
+      "categoryField": "name",
+      "categoryAxis": {
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": false,
+        "tickLength": 0
+      },
+      "export": {
+        "enabled": false
+      }
+    });
+
+  var chart = AmCharts.makeChart("leadgeneratedDiv",
+    {
+      "chartCursor": false,
+      "type": "serial",
+      "theme": "none",
+      "dataProvider": [{
+        "name": "ACTUAL",
+        "points": 2,
+        "color": "#5c667b"
+      }, {
+        "name": "TARGET",
+        "points": 15,
+        "color": "#F15D29"
+      }],
+      "valueAxes": [{
+        "maximum": 16,
+        "minimum": 0,
+        "axisAlpha": 0,
+        "dashLength": 4,
+        "position": "left"
+      }],
+      "startDuration": 2,
+      "graphs": [{
+        "showBalloon": false,
+        "balloonText": "<span style='font-size:13px;'>[[category]]: <b>[[value]]</b></span>",
+        "colorField": "color",
+        "cornerRadiusTop": 0,
+        "fillAlphas": 1,
+        "lineAlpha": 0,
+        "type": "column",
+        "valueField": "points",
+        "labelText": "[[category]]" + " " + "[[value]]",
+        "labelPosition": "top",
+        "labelColorField": "color"
+      }],
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginLeft": 0,
+      "marginBottom": 0,
+      "autoMargins": false,
+      "categoryField": "name",
+      "categoryAxis": {
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": false,
+        "tickLength": 0,
+      },
+      "export": {
+        "enabled": false
+      }
+    });
+
+
+
+  var chart = AmCharts.makeChart("businessDiv",
+    {
+      "chartCursor": false,
+      "type": "serial",
+      "theme": "none",
+      "dataProvider": [{
+        "name": "ACTUAL",
+        "points": 2,
+        "color": "#5c667b",
+      }, {
+        "name": "TARGET",
+        "points": 11,
+        "color": "#F15D29"
+      }],
+      "valueAxes": [{
+        "maximum": 12,
+        "minimum": 0,
+        "axisAlpha": 0,
+        "dashLength": 4,
+        "position": "left"
+      }],
+      "startDuration": 2,
+      "graphs": [{
+        "showBalloon": false,
+        "balloonText": "<span style='font-size:13px;'>[[category]]: <b>[[value]]</b></span>",
+        "colorField": "color",
+        "cornerRadiusTop": 0,
+        "fillAlphas": 1,
+        "lineAlpha": 0,
+        "type": "column",
+        "valueField": "points",
+        "labelText": "[[category]]" + " " + "[[value]]",
+        "labelPosition": "top",
+        "labelColorField": "color"
+      }],
+      "marginTop": 0,
+      "marginRight": 0,
+      "marginLeft": 0,
+      "marginBottom": 0,
+      "autoMargins": false,
+      "categoryField": "name",
+      "categoryAxis": {
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": false,
+        "tickLength": 0,
+      },
+      "export": {
+        "enabled": false
+      }
+    });
+</script>
+</body>
+</html>

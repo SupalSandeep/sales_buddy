@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sales Buddy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="js/owl/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="animate-in">
+<!--START MAIN CONTAINER-->
+<div class="main-container">
+
+    <!--HEADER START-->
+    <div class="header clearfix">
+        <div class="header-container clearfix">
+            <button id="menu-btn" class="menu-btn btn-transparent"><i class="fa fa-navicon fa-fw"></i></button> <img class="logo-small" src="images/logo-small.png"/>Meeting Details <a class="action-btn btn-transparent" href="dashboard.html" style="right:25px;"><span class="close-text">Close meeting</span><i class="fa fa-users"></i></a><a class="action-btn btn-transparent" href="javascript:void(0);"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--CONTENT AREA START-->
+    <div class="content-area meeting-container meeting-view-container">
+        <form id="meeting-add" class="meeting-add-form" name="meetingAdd">
+            <div class="form-group input-field">
+                <input type="text" id="title" class="validate" name="title" placeholder="Meeting with Test123" disabled>
+                <label for="title" class="disabled">Title:</label>
+            </div>
+            <div class="form-group input-field">
+                <input type="text" id="email" class="validate" name="email" placeholder="test@gmail.com" disabled>
+                <label for="title">Email ID:</label>
+            </div>
+            <div class="form-group input-field call">
+                <a href="javascript:;" onclick="window.open('tel:1471471470','_self');"><i class="fa fa-phone-square" style="color: green"></i></a>
+                <input type="text" id="mobile" class="validate" name="mobile" placeholder="1471471470" disabled>
+                <label for="mobile">Mobile Number:</label>
+            </div>
+            <div class="form-group input-field">
+                <input type="text" id="time" class="validate" name="time" placeholder="21 Dec, 12:50 PM" disabled>
+                <label for="time">Scheduled:</label>
+            </div>
+            <div class="form-group input-field">
+                <input type="text" id="category" class="validate" name="category" placeholder="Category1" disabled>
+                <label for="category">Product Category:</label>
+            </div>
+            <div class="form-group input-field">
+                <input type="text" id="product" class="validate" name="product" placeholder="..." disabled>
+                <label for="product">Product:</label>
+            </div>
+            <div class="form-group input-btn">
+                <div>
+                    <a href="dashboard.html" class="btn btn-orange waves-effect waves-light btn-block">IN PROGRESS</a>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-elegant waves-effect waves-light btn-block">REJECT LEAD</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--CONTENT AREA END-->
+</div>
+<!--END MAIN CONTAINER-->
+
+<!--MENU START-->
+<aside id="menu-container" class="menu-container">
+    <div class="user-panel">
+        <button id="menu-close" class="menu-close btn-transparent">
+            <i class="fa fa-close fa-fw"></i>
+        </button>
+        <i class="fa fa-user-circle-o fa-fw"></i>
+        <span>Neha</span>
+        <span>PR branch 1</span>
+    </div>
+    <div class="menu-div">
+        <ul class="menu-ul">
+            <li>
+                <a href="dashboard.html"><i class="fa fa-home fa-fw"></i> Home</a>
+            </li>
+            <!-- <li>
+                <a href="javascript:void(0);"><i class="fa fa-search fa-fw"></i> Search Leads</a>
+            </li> -->
+            <li>
+                <a href="lead-view.html"><i class="fa fa-user fa-fw"></i> View Leads</a>
+            </li>
+            <li>
+                <a href="lead-add.html"><i class="fa fa-user-plus fa-fw"></i> Add Lead</a>
+            </li>
+            <li>
+                <a href="meeting-view.html"><i class="fa fa-calendar fa-fw"></i> View Meeting</a>
+            </li>
+            <li>
+                <a href="meeting-add.html"><i class="fa fa-calendar-plus-o fa-fw"></i> Add Meeting</a>
+            </li>
+            <li>
+                <a href="performance.html"><i class="fa fa-line-chart fa-fw"></i> Performance</a>
+            </li>
+            <li><a href="javascript:void(0);"><i class="fa fa-exclamation-circle fa-fw"></i> Know Your Products</a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-handshake-o fa-fw"></i> Partner</a></li>
+            <li><a href="javascript:void(0);">About Sales Buddy</a></li>
+            <li><a href="javascript:void(0);">Take a Tour</a></li>
+        </ul>
+    </div>
+</aside>
+<div class="overlay-menu"></div>
+<!--MENU END-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/amcharts/amcharts.js"></script>
+<script src="js/amcharts/pie.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
